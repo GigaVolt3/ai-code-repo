@@ -1,5 +1,6 @@
-# Any folder whose name starts with a dot (e.g. .freebuff/, .venv/, .cache/) —
-# matches at any depth, including folders created in the future.
+# Any folder whose name starts with a dot — matches at any depth, including
+# folders created in the future (e.g. .freebuff/, .venv/, .cache/).
+# (Note: this also ignores .github/ etc.; add a "!.github/" exception if needed.)
 .*/
 
 # Environment / secrets (files)
@@ -7,15 +8,41 @@
 .env.*
 !.env.example
 
-# Python
+# Virtual environments & installed dependencies
+.venv/
+.venv*/
+venv/
+venv*/
+env/
+ENV/
+env.bak/
+venv.bak/
+node_modules/
+
+# Python bytecode & packaging artifacts
 __pycache__/
 *.py[cod]
+*.egg
 *.egg-info/
-venv/
+.eggs/
+pip-wheel-metadata/
+*.whl
+
+# Test & lint caches
+.coverage
+.coverage.*
+htmlcov/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.tox/
+.nox/
 .ipynb_checkpoints/
+
+# Build artifacts
+dist/
+build/
+*.log
 
 # OS / editor
 .DS_Store
@@ -23,8 +50,3 @@ Thumbs.db
 .idea/
 .vscode/
 *.swp
-
-# Build artifacts
-dist/
-build/
-*.log
