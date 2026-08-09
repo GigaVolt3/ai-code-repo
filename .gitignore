@@ -1,0 +1,30 @@
+# Any folder whose name starts with a dot (e.g. .freebuff/, .venv/, .cache/) —
+# matches at any depth, including folders created in the future.
+.*/
+
+# Environment / secrets (files)
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Build artifacts
+dist/
+build/
+*.log
