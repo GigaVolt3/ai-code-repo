@@ -17,7 +17,6 @@ library and verify your environment.
 ├── resources/                      # links + minimal requirements
 │   ├── reference_links.md
 │   └── requirements.txt
-└── screenshots/                    # evidence screenshots (see README inside)
 ```
 
 ## Quick start

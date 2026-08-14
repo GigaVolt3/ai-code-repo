@@ -1,0 +1,5 @@
+# Dependencies for HF-204 — Translation
+# Install with: pip install -r resources/requirements.txt
+transformers>=4.40.0
+torch>=2.1.0
+sacremoses>=0.1.1

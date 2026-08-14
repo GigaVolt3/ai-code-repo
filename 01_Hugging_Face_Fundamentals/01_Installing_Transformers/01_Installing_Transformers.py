@@ -129,7 +129,7 @@ def smoke_test() -> None:
     """Download a small model and run one prediction to prove the install end-to-end.
 
     Uses the canonical 'distilbert/distilbert-base-uncased-finetuned-sst-2-english'
-    (~250 MB, downloaded once and cached) — small enough to run on CPU and known
+    (~270 MB, downloaded once and cached) — small enough to run on CPU and known
     to be compatible with current transformers versions.
     """
     print("\nRunning a smoke test with a small sentiment model ...")
